@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item{
+    border: solid 1px black;
+    margin: 20px;
+    padding: 30px;
+}
+
+.transition-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: yellow;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+
+}
+
+.transition-button:hover{
+    background-color: blue;
+}
+
+.transition-text{
+    font-size: 20px;
+    color: blueviolet;
+    font-family: fantasy;
+    transition-property: color, font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.transition-text:hover{
+    color: red;
+    font-size: 30px;
+
+}
+
+.transition-box{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition-property: transform, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.transition-box:hover{
+    transform: scale(1.5) rotate(45deg);
+    background-color: darkolivegreen;
+}
+
+.fancy-button{
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color:green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fancy-button:hover{
+    transform:translateY(-10) scale(1.1);
+    background-color: brown;
+    box-shadow: 0 8px 20px black;
+    }
+
+.expand-text{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: blue;
+    transition-property: letter-spacing, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.expand-text:hover{
+    letter-spacing: 20px;
+    color: cyan;
+}
+
+
+.interactive-button{
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-property: background-color, transform, box-shadow;
+}
+
+.interactive-button:hover{
+    background-color: green;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px yellow;
+    }
+
+.interactive-button:active{
+    background-color: darkmagenta;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px black;
+}
